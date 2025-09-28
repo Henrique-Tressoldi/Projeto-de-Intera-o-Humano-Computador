@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciar Empréstimos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="card">
+        <h2>Gerenciar Empréstimos</h2>
+        
+        <div class="form-group">
+            <label for="associado">Selecionar Associado</label>
+            <select id="associado">
+                <option value="">Escolha um associado...</option>
+                <option value="joao">João da Silva (Cód: 123)</option>
+                <option value="maria">Maria Oliveira (Cód: 456)</option>
+            </select>
+        </div>
+
+        <section class="form-section">
+            <h3>Itens Emprestados</h3>
+            <div class="results-list">
+                <div class="results-item">
+                    <h4>O Hobbit</h4>
+                    <p>Data Retirada: 05/09/2025</p>
+                    <p>Devolução Prevista: 15/09/2025</p>
+                    <div class="action-buttons">
+                        <button class="btn">Registrar Devolução</button>
+                        <button class="btn">Calcular Multa</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,220 @@
+:root {
+    --primary-color: #007BFF;
+    --secondary-color: #f4f4f9;
+    --text-color: #333;
+    --border-color: #ddd;
+    --success-color: #28a745;
+    --warning-color: #ffc107;
+    --danger-color: #dc3545;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--secondary-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.card {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link-container a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.link-container a:hover {
+    text-decoration: underline;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu-item {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #e9e9f0;
+}
+
+.menu-item span {
+    margin-right: 15px;
+    font-size: 24px;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-item {
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.item-header h4 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #444;
+}
+
+.status {
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.status.available { background-color: var(--success-color); }
+.status.unavailable { background-color: var(--danger-color); }
+
+.item-details {
+    color: #666;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.action-buttons .btn {
+    width: auto;
+    flex-grow: 1;
+    padding: 10px 15px;
+    font-size: 1em;
+}
+
+.loan-item {
+    padding: 20px;
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.loan-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.loan-item-header h4 {
+    margin: 0;
+    font-size: 1.1em;
+}
+
+.loan-status {
+    font-weight: 700;
+}
+
+.loan-status.normal { color: var(--success-color); }
+.loan-status.atraso { color: var(--warning-color); }
+.loan-status.multa { color: var(--danger-color); }
+
+.loan-details {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+}
+
+.form-section h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
